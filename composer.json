@@ -1,0 +1,22 @@
+ 
+{
+    "name": "your-project/api-service",
+    "type": "project",
+    "require": {
+        "php": "^8.2",
+        "frankenphp/frankenphp": "^1.0",
+        "symfony/http-client": "^6.3",
+        "twig/twig": "^3.0"
+    },
+    "minimum-stability": "dev",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/adamsan19/frank.git"
+        }
+    ],
+    "scripts": {
+        "start": "frankenphp run -c frankenphp.conf",
+        "start-worker": "frankenphp run --worker -c frankenphp.conf"
+    }
+}
